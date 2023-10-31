@@ -26,6 +26,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -74,7 +75,7 @@ fun RecordsScreen(nav: NavHostController, quizVM: QuizViewModel) {
 
         if (listOfRecords.isEmpty()) {
             Text(
-                text = "Тут будут рекорды", color = Color.White,
+                text = stringResource(R.string.there_wiil_be_records), color = Color.White,
                 fontFamily = FontFamily(Font(R.font.sof)),
                 fontWeight = FontWeight.Bold,
                 fontSize = 15.sp,
@@ -92,7 +93,7 @@ fun RecordsScreen(nav: NavHostController, quizVM: QuizViewModel) {
             ) {
 
                 Text(
-                    text = "Рекорды", color = Color.White,
+                    text = stringResource(R.string.records), color = Color.White,
                     fontFamily = FontFamily(Font(R.font.sof)),
                     fontWeight = FontWeight.Bold,
                     fontSize = 22.sp,

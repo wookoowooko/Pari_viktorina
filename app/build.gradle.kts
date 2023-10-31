@@ -22,14 +22,28 @@ android {
         }
     }
 
+    signingConfigs {
+        create("newrelease") {
+            keyAlias = "key0"
+            storePassword = "newrelease"
+            keyPassword = "newrelease"
+            storeFile = file("keystore.jks")
+            storeType= "jks"
+        }
+    }
+
     buildTypes {
         release {
-            isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("newrelease")
+            isDebuggable = false
+            isMinifyEnabled = true
+            multiDexEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
         }
+
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17

@@ -12,7 +12,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.material.icons.Icons
@@ -36,6 +35,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -51,7 +51,6 @@ import com.viktos.paribet.qiuz.R
 import com.viktos.paribet.qiuz.Screen
 import com.viktos.paribet.qiuz.presenter.QuizViewModel
 
-private const val TAG = "Quiz"
 
 @Composable
 fun Quiz(quizVM: QuizViewModel, nav: NavHostController) {
@@ -242,7 +241,9 @@ fun Quiz(quizVM: QuizViewModel, nav: NavHostController) {
             }) {
             Text(
                 fontFamily = FontFamily(Font(R.font.sof)),
-                text = if (quizList.size > questionState) "Далее" else "Завершить"
+                text = if (quizList.size > questionState) stringResource(R.string.next) else stringResource(
+                    R.string.finish
+                )
             )
         }
 

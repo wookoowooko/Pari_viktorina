@@ -36,6 +36,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -45,15 +46,17 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.navigation.NavHostController
-import com.viktos.paribet.qiuz.presenter.QuizViewModel
 import com.viktos.paribet.qiuz.R
 import com.viktos.paribet.qiuz.Screen
 import com.viktos.paribet.qiuz.db.ScoreEntity
+import com.viktos.paribet.qiuz.presenter.QuizViewModel
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalComposeUiApi::class)
 @Composable
 fun FinalScreen(quizVM: QuizViewModel, nav: NavHostController) {
+    
+
     val openAlertDialog = remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
     val snackbarHostState = remember { SnackbarHostState() }
@@ -61,6 +64,7 @@ fun FinalScreen(quizVM: QuizViewModel, nav: NavHostController) {
     var text by rememberSaveable { mutableStateOf("") }
     var isError by remember { mutableStateOf(false) }
     var isSaved by remember { mutableStateOf(false) }
+    val saved = stringResource(R.string.saved)
 
     Scaffold(
         snackbarHost = {
@@ -98,7 +102,7 @@ fun FinalScreen(quizVM: QuizViewModel, nav: NavHostController) {
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Text(
-                                text = "Введите ваш ник", color = Color.Black,
+                                text = stringResource(R.string.input_your_nickname), color = Color.Black,
                                 fontFamily = FontFamily(Font(R.font.sof)),
                                 fontWeight = FontWeight.Bold,
                                 fontSize = 17.sp,
@@ -127,7 +131,7 @@ fun FinalScreen(quizVM: QuizViewModel, nav: NavHostController) {
                                 verticalAlignment = Alignment.CenterVertically
                             ) {
                                 Text(
-                                    text = "Сохранить", color = Color.Black,
+                                    text = stringResource(R.string.save), color = Color.Black,
                                     fontFamily = FontFamily(Font(R.font.sof)),
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 12.sp,
@@ -145,7 +149,7 @@ fun FinalScreen(quizVM: QuizViewModel, nav: NavHostController) {
                                                 )
                                                 scope.launch {
                                                     snackbarHostState.showSnackbar(
-                                                        "Сохранено",
+                                                        saved,
                                                         duration = SnackbarDuration.Short
                                                     )
                                                     nav.navigate(Screen.Welcome.route)
@@ -159,7 +163,7 @@ fun FinalScreen(quizVM: QuizViewModel, nav: NavHostController) {
                                     overflow = TextOverflow.Ellipsis
                                 )
                                 Text(
-                                    text = "Отмена",
+                                    text = stringResource(R.string.cancel),
                                     color = Color.Black,
                                     fontFamily = FontFamily(Font(R.font.sof)),
                                     fontWeight = FontWeight.Bold,
@@ -183,7 +187,7 @@ fun FinalScreen(quizVM: QuizViewModel, nav: NavHostController) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "Пправильных ответов", color = Color.White,
+                    text = stringResource(R.string.right_answers), color = Color.White,
                     fontFamily = FontFamily(Font(R.font.sof)),
                     fontWeight = FontWeight.Bold,
                     fontSize = 17.sp,
@@ -209,7 +213,7 @@ fun FinalScreen(quizVM: QuizViewModel, nav: NavHostController) {
                         colors = ButtonDefaults.buttonColors(containerColor = Teal)
                     ) {
                         Text(
-                            text = "Сохранить", color = Color.White,
+                            text = stringResource(id = R.string.save), color = Color.White,
                             fontFamily = FontFamily(Font(R.font.sof)),
                             fontWeight = FontWeight.Bold,
                             fontSize = 18.sp,

@@ -7,129 +7,179 @@ class GetQuestionsUseCase(private val context: Context) {
     fun execute(): List<QuizModel> {
         return listOf(
             QuizModel(
-                question = context.getString(R.string.q1),
-                answers = listOf("Иокогама (Япония)", "Абу-Даби (ОАЭ)", "Лондон (Англия)", "Доха (Катар)"),
-                correctAnswer = 4
-            ),
-            QuizModel(
-                question = "2. Кто стал победителем ФИФА 2019?",
-                answers = listOf("Фламенго (Франция)", "Бавария (Германия)", "Ливерпуль (Англия)", "Манчестер Юнайтед (Англия)"),
+                question = context.getString(R.string.q1), answers = listOf(
+                    context.getString(R.string.a1_1),
+                    context.getString(R.string.a1_2),
+                    context.getString(R.string.a1_3),
+                    context.getString(R.string.a1_4)
+                ), correctAnswer = 4
+            ), QuizModel(
+                question = context.getString(R.string.q2), answers = listOf(
+                    context.getString(R.string.a2_1),
+                    context.getString(R.string.a2_2),
+                    context.getString(R.string.a2_3),
+                    context.getString(R.string.a2_4)
+                ), correctAnswer = 3
+            ), QuizModel(
+                question = context.getString(R.string.q3), answers = listOf(
+                    context.getString(R.string.a3_1),
+                    context.getString(R.string.a3_2),
+                    context.getString(R.string.a3_3),
+                    context.getString(R.string.a3_4)
+                ), correctAnswer = 1
+            ), QuizModel(
+                question = context.getString(R.string.q4), answers = listOf(
+                    context.getString(R.string.a4_1),
+                    context.getString(R.string.a4_2),
+                    context.getString(R.string.a4_3),
+                    context.getString(R.string.a4_4)
+                ), correctAnswer = 2
+            ), QuizModel(
+                question = context.getString(R.string.q5), answers = listOf(
+                    context.getString(R.string.a5_1),
+                    context.getString(R.string.a5_2),
+                    context.getString(R.string.a5_3),
+                    context.getString(R.string.a5_4)
+                ), correctAnswer = 2
+            ), QuizModel(
+                question = context.getString(R.string.q6), answers = listOf(
+                    context.getString(R.string.a6_1),
+                    context.getString(R.string.a6_2),
+                    context.getString(R.string.a6_3),
+                    context.getString(R.string.a6_4)
+                ), correctAnswer = 1
+            ), QuizModel(
+                question = context.getString(R.string.q7), answers = listOf(
+                    context.getString(R.string.a7_1),
+                    context.getString(R.string.a7_2),
+                    context.getString(R.string.a7_3),
+                    context.getString(R.string.a7_4)
+                ), correctAnswer = 3
+            ), QuizModel(
+                question = context.getString(R.string.q8), answers = listOf(
+                    context.getString(R.string.q8_1),
+                    context.getString(R.string.a8_2),
+                    context.getString(R.string.a8_3),
+                    context.getString(R.string.a8_4)
+                ), correctAnswer = 4
+            ), QuizModel(
+                question = context.getString(R.string.q9), answers = listOf(
+                    context.getString(R.string.a9_1),
+                    context.getString(R.string.a9_2),
+                    context.getString(R.string.a9_3),
+                    context.getString(R.string.a9_4)
+                ), correctAnswer = 1
+            ), QuizModel(
+                question = context.getString(R.string.q10), answers = listOf(
+                    context.getString(R.string.a10_1),
+                    context.getString(R.string.a10_2),
+                    context.getString(R.string.a10_3),
+                    context.getString(R.string.a10_4)
+                ), correctAnswer = 4
+            ), QuizModel(
+                question = context.getString(R.string.q11), answers = listOf(
+                    context.getString(R.string.a11_1),
+                    context.getString(R.string.a11_2),
+                    context.getString(R.string.a11_3),
+                    context.getString(R.string.a11_4)
+                ), correctAnswer = 2
+            ), QuizModel(
+                question = context.getString(R.string.q12), answers = listOf(
+                    context.getString(R.string.q12_1),
+                    context.getString(R.string.q12_2),
+                    context.getString(R.string.q12_3),
+                    context.getString(R.string.q12_4)
+                ), correctAnswer = 3
+            ), QuizModel(
+                question = context.getString(R.string.q13), answers = listOf(
+                    context.getString(R.string.q13_1),
+                    context.getString(R.string.q13_2),
+                    context.getString(R.string.q13_3),
+                    context.getString(R.string.q13_4)
+                ), correctAnswer = 1
+            ), QuizModel(
+                question = context.getString(R.string.q14), answers = listOf(
+                    context.getString(R.string.q14_1),
+                    context.getString(R.string.q14_2),
+                    context.getString(R.string.q14_3),
+                    context.getString(R.string.q14_4)
+                ), correctAnswer = 2
+            ), QuizModel(
+                question = context.getString(R.string.q15),
+                answers = listOf(
+                    context.getString(R.string.q15_1),
+                    context.getString(R.string.q15_2),
+                    context.getString(R.string.q15_3),
+                    context.getString(R.string.q15_4)
+                ), correctAnswer = 1
+            ), QuizModel(
+                question = context.getString(R.string.q16), answers = listOf(
+                    context.getString(R.string.q16_1),
+                    context.getString(R.string.q16_2),
+                    context.getString(R.string.q16_3),
+                    context.getString(R.string.q16_4)
+                ), correctAnswer = 3
+            ), QuizModel(
+                question = context.getString(R.string.q17), answers = listOf(
+                    context.getString(R.string.q17_1),
+                    context.getString(R.string.q17_2),
+                    context.getString(R.string.q17_3),
+                    context.getString(R.string.q17_4)
+                ), correctAnswer = 4
+            ), QuizModel(
+                question = context.getString(R.string.q18), answers = listOf(
+                    context.getString(R.string.a18_1),
+                    context.getString(R.string.a18_2),
+                    context.getString(R.string.a18_3),
+                    context.getString(R.string.a18_4)
+                ), correctAnswer = 1
+            ), QuizModel(
+                question = context.getString(R.string.q19), answers = listOf(
+                    context.getString(R.string.a19_1),
+                    context.getString(R.string.a19_2),
+                    context.getString(R.string.a19_3),
+                    context.getString(R.string.a19_4)
+                ), correctAnswer = 2
+            ), QuizModel(
+                question = context.getString(R.string.q20), answers = listOf(
+                    context.getString(R.string.q20_1),
+                    context.getString(R.string.q20_2),
+                    context.getString(R.string.q20_3),
+                    context.getString(R.string.q20_4)
+                ), correctAnswer = 1
+            ), QuizModel(
+                question = context.getString(R.string.q21), answers = listOf(
+                    context.getString(R.string.a21_1),
+                    context.getString(R.string.a21_2),
+                    context.getString(R.string.a21_3),
+                    context.getString(R.string.a21_4)
+                ), correctAnswer = 1
+            ), QuizModel(
+                question = context.getString(R.string.q22), answers = listOf(
+                    context.getString(R.string.q22_1),
+                    context.getString(R.string.q22_2),
+                    context.getString(R.string.q22_3),
+                    context.getString(R.string.q22_4)
+                ), correctAnswer = 4
+            ), QuizModel(
+                question = context.getString(R.string.q23), answers = listOf(
+                    context.getString(R.string.q23_1),
+                    context.getString(R.string.q23_2),
+                    context.getString(R.string.q23_3),
+                    context.getString(R.string.q23_4)
+                ), correctAnswer = 1
+            ), QuizModel(
+                question = context.getString(R.string.q24),
+                answers = listOf(context.getString(R.string.q24_1),
+                    context.getString(R.string.q24_2), context.getString(R.string.q24_3),
+                    context.getString(R.string.q24_4)),
                 correctAnswer = 3
-            ),
-            QuizModel(
-                question = "3. Кто признан лучшим вратарём вы 2019 году по версии ФИФА?",
-                answers = listOf("Алиссон из «Ливерпуля»", "Тибо Куртуа из «Реала»", "Ян Облак из «Атлетико»", "Давид де Хеа из «Манчестер Юнайтед»"),
-                correctAnswer = 1
-            ),
-            QuizModel(
-                question = "4. Кто является лучшим бомбардиром за всю историю сборной Португалии?",
-                answers = listOf("Матийс де Лигт", "Криштиану Роналду", "Лионель Месси", "Вирджил ван Дейк"),
-                correctAnswer = 2
-            ),
-            QuizModel(
-                question = "5. В какой стране появился и начал развиваться футбол?",
-                answers = listOf("Бразилия", "Англия", "Испания", "Португалия"),
-                correctAnswer = 2
-            ),
-            QuizModel(
-                question = "6. В какой стране впервые проходил Кубок мира ФИФА?",
-                answers = listOf("Уругвай", "Франция", "Испания", "Англия"),
-                correctAnswer = 1
-            ),
-            QuizModel(
-                question = "7. Как называется гол, который футболист забил в свои ворота?",
-                answers = listOf("Штрафной", "«Мертвый мяч»", "Автогол", "Ложный маневр"),
-                correctAnswer = 3
-            ),
-            QuizModel(
-                question = "8. Какое количество игроков одновременно находится на игровом поле с двух сторон?",
-                answers = listOf("30 игроков", "24 игрока", "11 игроков", "22 игрока"),
-                correctAnswer = 4
-            ),
-            QuizModel(
-                question = "9. Команда из какой страны чаще всего становилась победителем чемпионата мира и сколько раз?",
-                answers = listOf("Бразилия (5 побед)", "Англия (4 победы)", "Испания (4 победы)", "Германия (3 победы)"),
-                correctAnswer = 1
-            ),
-            QuizModel(
-                question = "10. Назовите правильные размеры стандартных футбольных ворот?",
-                answers = listOf("7,22 на 2,45 метра", "6,9 на 2,11 метра", "7,11 на 2,33 метра", "7,32 на 2,44 метра+"),
-                correctAnswer = 4
-            ),
-            QuizModel(
-                question = "11. Как правильно расшифровывается аббревиатура УЕФА?",
-                answers = listOf("Содружество европейских футбольных абсорбций", "Союз европейских футбольных ассоциаций", "Союз евроинтегрированных футбольных ассоциаций", "Собрание европейских футбольных ассоциаций."),
-                correctAnswer = 2
-            ),
-            QuizModel(
-                question = "12. Что оформил игрок, забивший 3 мяча за один матч?",
-                answers = listOf("Трипл-сек", "Автогол", "Хет-трик", "Гандикап"),
-                correctAnswer = 3
-            ),
-            QuizModel(
-                question = "13. Сколько существует размеров футбольных мячей?",
-                answers = listOf("5 размеров", "2 размера", "3 размер", "6 размеров"),
-                correctAnswer = 1
-            ),
-            QuizModel(
-                question = "14. Как называется самая почетная персональная награда для футболиста?",
-                answers = listOf("Статуэтка чемпиона", "Золотой мяч", "Кубок чемпиона", "Золотая бутса"),
-                correctAnswer = 2
-            ),
-            QuizModel(
-                question = "15. Футбольный клуб какой страны в 20 веке 5 раз подряд становился победителем Лиги Чемпионов? Как он называется?",
-                answers = listOf("Реал Мадрид (Испания)", "Ювентус (Италия)", "Манчестер Сити (Англия)", "Арсенал (Англия)"),
-                correctAnswer = 1
-            ),
-            QuizModel(
-                question = "16. Что такое финт в футболе?",
-                answers = listOf("Определение местоположения мяча", "Название тайма", "Технический элемент, который выполняют, чтобы обмануть соперника", "Второе наименование полузащитника"),
-                correctAnswer = 3
-            ),
-            QuizModel(
-                question = "17. При каких условиях футболисты играют красным или желтым мячом?",
-                answers = listOf("Если мяч вылетел за пределы поля", "Во втором тайме", "Когда начинается дополнительное время игры", "Во время неблагоприятных погодных условий – дождь, снег, туман"),
-                correctAnswer = 4
-            ),
-            QuizModel(
-                question = "18. Какое количество рефери необходимо для судейства одного футбольного матча?\n",
-                answers = listOf("Трое", "Пятеро", "Двое", "Семеро"),
-                correctAnswer = 1
-            ),
-            QuizModel(
-                question = "19. Кто является атвором самого сильного удара в футболе, согласно данным на начало 2020 года?",
-                answers = listOf("Дэвид Бекхэм", "Халк", "Роберто Карлос", "Лукас Подольски"),
-                correctAnswer = 2
-            ),
-            QuizModel(
-                question = "20. Сколько желтых карточек допускается получить игроку за одну игру?",
-                answers = listOf("Одну", "Две", "Ни одной", "Три"),
-                correctAnswer = 1
-            ),
-            QuizModel(
-                question = "21. Какие цвета карточек существуют в футболе?",
-                answers = listOf("Красная и желтая", "Зеленая, красная и желтая", "Черная и красная", "Синяя и красная"),
-                correctAnswer = 1
-            ),
-            QuizModel(
-                question = "22. Как называют игрока, который в соревновании забил больше всех голов?",
-                answers = listOf("Лидер", "Голкипер", "Вице-чемпион", "Лучший бомбардир"),
-                correctAnswer = 4
-            ),
-            QuizModel(
-                question = "23. Чем сигнализирует нарушение боковой судья основному арбитру?",
-                answers = listOf("Флагом", "Рукой", "Карточкой", "Свистком"),
-                correctAnswer = 1
-            ),
-            QuizModel(
-                question = "24. Как называется штрафной удар, который совершают по воротам на расстоянии 11 метров?",
-                answers = listOf("Буллит", "Гол", "Пенальти", "Аут"),
-                correctAnswer = 3
-            ),
-            QuizModel(
-                question = "25. Что в переводе с английского означает слово «футбол»?",
-                answers = listOf("«Ручной мяч»", "«Мяч для ноги»", "«Бей ногой»", "«Мячом и ступней»"),
-                correctAnswer = 4
+            ), QuizModel(
+                question = context.getString(R.string.q25), answers = listOf(
+                    context.getString(R.string.q25_1),
+                    context.getString(R.string.q25_2),
+                    context.getString(R.string.q25_3), context.getString(R.string.q25_4)
+                ), correctAnswer = 4
             )
         )
     }
