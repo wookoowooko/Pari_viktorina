@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Pari_viktorina</string>
+    <string name="app_name">Pari_Q</string>
     <string name="q1">1. В какой стране, и в каком городе проходил Финал Клубного чемпионата мира 2019?</string>
     <string name="next">Далее</string>
     <string name="finish">Завершить</string>

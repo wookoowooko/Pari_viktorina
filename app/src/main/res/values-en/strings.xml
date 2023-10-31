@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Pari_viktorina</string>
+    <string name="app_name">Pari_Q</string>
     <string name="q1">In which country and city did the Final of the Club World Cup 2019 take place?</string>
     <string name="next">Next</string>
     <string name="finish">Finish</string>
