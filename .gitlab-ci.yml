@@ -37,18 +37,18 @@ build:
       fi
 
     - ./gradlew  assembleRelease
-    - mv app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/APPLICATION_ID_VERSION_NAME.apk
+    - mv app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/$APPLICATION_ID_VERSION_NAME.apk
     - ls app/build/outputs/apk/release/
     - ./gradlew  bundleRelease
     - ls app/build/outputs/bundle/release/
-    - mv app/build/outputs/bundle/release/app-release.aab app/build/outputs/bundle/release/APPLICATION_ID_VERSION_NAME.aab
+    - mv app/build/outputs/bundle/release/app-release.aab app/build/outputs/bundle/release/$APPLICATION_ID_VERSION_NAME.aab
 
 
   artifacts:
     name: APPLICATION_ID_VERSION_NAME
     paths:
-      - app/build/outputs/apk/release/APPLICATION_ID_VERSION_NAME.apk
-      - app/build/outputs/bundle/release/APPLICATION_ID_VERSION_NAME.aab
+      - app/build/outputs/apk/release/$APPLICATION_ID_VERSION_NAME.apk
+      - app/build/outputs/bundle/release/$APPLICATION_ID_VERSION_NAME.aab
       - app/keystore.jks
 
   only:
@@ -58,6 +58,6 @@ after_script:
     MESSAGE="$CI_COMMIT_MESSAGE"
     curl -s -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage -d "chat_id=$TELEGRAM_CHAT_ID" -d "text=$MESSAGE"
 
-    curl -F chat_id=$TELEGRAM_CHAT_ID -F document=@app/build/outputs/bundle/release/APPLICATION_ID_VERSION_NAME.aab -F text=MESSAGE -H "Content-Type: multipart/form-data" -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument
+    curl -F chat_id=$TELEGRAM_CHAT_ID -F document=@app/build/outputs/bundle/release/$APPLICATION_ID_VERSION_NAME.aab -F text=MESSAGE -H "Content-Type: multipart/form-data" -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument
     curl -F chat_id=$TELEGRAM_CHAT_ID -F document=@app/keystore.jks -F text="Keystore File" -H "Content-Type: multipart/form-data" -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument
-    curl -F chat_id=$TELEGRAM_CHAT_ID -F document=@app/build/outputs/apk/release/APPLICATION_ID_VERSION_NAME.apk -F text=MESSAGE -H "Content-Type: multipart/form-data" -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument
+    curl -F chat_id=$TELEGRAM_CHAT_ID -F document=@app/build/outputs/apk/release/$APPLICATION_ID_VERSION_NAME.apk -F text=MESSAGE -H "Content-Type: multipart/form-data" -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument
