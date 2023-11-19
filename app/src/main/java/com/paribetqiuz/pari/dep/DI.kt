@@ -1,11 +1,11 @@
-package com.viktos.paribet.qiuz
+package com.paribetqiuz.pari.dep
 
 import android.content.Context
 import androidx.room.Room
-import com.viktos.paribet.qiuz.db.ScoreDao
-import com.viktos.paribet.qiuz.db.ScoreDb
-import com.viktos.paribet.qiuz.db.ScoreRepo
-import com.viktos.paribet.qiuz.presenter.GetQuestionsUseCase
+import com.paribetqiuz.pari.dep.db.ScoreDao
+import com.paribetqiuz.pari.dep.db.ScoreDb
+import com.paribetqiuz.pari.dep.db.ScoreRepo
+import com.paribetqiuz.pari.dep.presenter.GetQuestionsUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

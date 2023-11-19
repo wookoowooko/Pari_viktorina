@@ -1,4 +1,4 @@
-package com.viktos.paribet.qiuz.presenter.ui
+package com.paribetqiuz.pari.dep.presenter.ui
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
@@ -47,9 +47,9 @@ import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import androidx.navigation.NavHostController
-import com.viktos.paribet.qiuz.R
-import com.viktos.paribet.qiuz.Screen
-import com.viktos.paribet.qiuz.presenter.QuizViewModel
+import com.paribetqiuz.pari.dep.R
+import com.paribetqiuz.pari.dep.Screen
+import com.paribetqiuz.pari.dep.presenter.QuizViewModel
 
 
 @Composable

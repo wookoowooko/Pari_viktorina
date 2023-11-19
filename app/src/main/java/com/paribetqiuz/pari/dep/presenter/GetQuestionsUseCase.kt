@@ -1,7 +1,7 @@
-package com.viktos.paribet.qiuz.presenter
+package com.paribetqiuz.pari.dep.presenter
 
 import android.content.Context
-import com.viktos.paribet.qiuz.R
+import com.paribetqiuz.pari.dep.R
 
 class GetQuestionsUseCase(private val context: Context) {
     fun execute(): List<QuizModel> {

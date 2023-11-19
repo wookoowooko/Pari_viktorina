@@ -1,4 +1,4 @@
-package com.viktos.paribet.qiuz.presenter
+package com.paribetqiuz.pari.dep.presenter
 
 data class QuizModel(
     val question:String,

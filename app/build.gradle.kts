@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.viktos.paribet.qiuz"
+    namespace = "com.paribetqiuz.pari.dep"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.viktos.paribet.qiuz"
+        applicationId = "com.paribetqiuz.pari.dep"
         minSdk = 27
         targetSdk = 34
         versionCode = 1

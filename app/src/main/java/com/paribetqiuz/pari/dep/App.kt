@@ -1,4 +1,4 @@
-package com.viktos.paribet.qiuz
+package com.paribetqiuz.pari.dep
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

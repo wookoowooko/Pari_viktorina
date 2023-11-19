@@ -1,9 +1,9 @@
-package com.viktos.paribet.qiuz.presenter
+package com.paribetqiuz.pari.dep.presenter
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.viktos.paribet.qiuz.db.ScoreEntity
-import com.viktos.paribet.qiuz.db.ScoreRepo
+import com.paribetqiuz.pari.dep.db.ScoreEntity
+import com.paribetqiuz.pari.dep.db.ScoreRepo
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

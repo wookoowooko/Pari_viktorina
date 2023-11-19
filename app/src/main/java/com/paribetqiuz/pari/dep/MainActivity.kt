@@ -1,4 +1,4 @@
-package com.viktos.paribet.qiuz
+package com.paribetqiuz.pari.dep
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,11 +7,11 @@ import androidx.activity.viewModels
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.viktos.paribet.qiuz.presenter.QuizViewModel
-import com.viktos.paribet.qiuz.presenter.ui.FinalScreen
-import com.viktos.paribet.qiuz.presenter.ui.Quiz
-import com.viktos.paribet.qiuz.presenter.ui.RecordsScreen
-import com.viktos.paribet.qiuz.presenter.ui.StartScreen
+import com.paribetqiuz.pari.dep.presenter.QuizViewModel
+import com.paribetqiuz.pari.dep.presenter.ui.FinalScreen
+import com.paribetqiuz.pari.dep.presenter.ui.Quiz
+import com.paribetqiuz.pari.dep.presenter.ui.RecordsScreen
+import com.paribetqiuz.pari.dep.presenter.ui.StartScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

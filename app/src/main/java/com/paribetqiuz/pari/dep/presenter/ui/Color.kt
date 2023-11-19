@@ -1,4 +1,4 @@
-package com.viktos.paribet.qiuz.presenter.ui
+package com.paribetqiuz.pari.dep.presenter.ui
 
 import androidx.compose.ui.graphics.Color
 

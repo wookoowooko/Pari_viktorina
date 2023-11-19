@@ -1,4 +1,4 @@
-package com.viktos.paribet.qiuz.db
+package com.paribetqiuz.pari.dep.db
 
 import androidx.annotation.Keep
 import androidx.room.Entity

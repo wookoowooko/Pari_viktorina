@@ -1,4 +1,4 @@
-package com.viktos.paribet.qiuz.presenter.ui
+package com.paribetqiuz.pari.dep.presenter.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -46,10 +46,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.navigation.NavHostController
-import com.viktos.paribet.qiuz.R
-import com.viktos.paribet.qiuz.Screen
-import com.viktos.paribet.qiuz.db.ScoreEntity
-import com.viktos.paribet.qiuz.presenter.QuizViewModel
+import com.paribetqiuz.pari.dep.R
+import com.paribetqiuz.pari.dep.Screen
+import com.paribetqiuz.pari.dep.db.ScoreEntity
+import com.paribetqiuz.pari.dep.presenter.QuizViewModel
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalComposeUiApi::class)
