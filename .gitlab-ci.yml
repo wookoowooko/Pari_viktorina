@@ -8,7 +8,7 @@ variables:
   KEYSTORE_ALIAS: key0
   KEYSTORE_PASSWORD: newrelease
   KEY_PASSWORD: newrelease
-  APPLICATION_ID_VERSION_NAME: Pari_quiz_v1_com.viktos.paribet.qiuz
+  APPLICATION_ID_VERSION_NAME: Pari_quiz_v1_com.paribetqiuz.pari.dep
   TELEGRAM_BOT_TOKEN: 935417338:AAGPfdKDuAYdmo2Myjc-FjLJ6WE6yP0nrJ8
   TELEGRAM_CHAT_ID: -1001871616567
   KEYPASS_FILE: keystore.pass
